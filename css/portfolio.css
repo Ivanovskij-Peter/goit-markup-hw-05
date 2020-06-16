@@ -228,28 +228,30 @@ a {
   height: 100%;
   bottom: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transform: translateY(290px);
   background-color: rgba(33, 150, 243, 0.9);
 }
 .example:hover .second-work::before {
   opacity: 1;
+  transform: none;
 }
 .second-text {
-  display: flex;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+
+  opacity: 1;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 322px;
   height: 168px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: rebeccapurple;
 }
 .example:hover .second-text {
   opacity: 1;
