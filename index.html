@@ -56,26 +56,39 @@
         <div class="container hero-main">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-button">Заказать услугу</button>
-          <div class="backdrop is-hidden">
+          <div class="backdrop">
             <div class="modal">
-              <form>
-              <h1>Оставьте свои данные,мы вам перезвоним</h1>
+              <form class="form">
+                <p class="form-title">Оставьте свои данные,мы вам перезвоним</p>
+                <div class="form-field">
+                  <svg class="svg-form" width="18" height="18">
+                    <use href=./img/symbol-defs.svg#icon-person></use>
+                  </svg>
+                <label class="form-label" for="name">Имя</label>
+                <input class="form-input" type="text" name="name" id="name"/></div>
 
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name"/>
+                <div class="form-field">
+                  <svg class="svg-form" width="18" height="18">
+                    <use href=./img/symbol-defs.svg#icon-phone></use>
+                  </svg>
+                <label class="form-label" for="tel">Телефон</label> 
+                <input class="form-input" type="tel" name="name" id="tel"/></div>
 
-                <label for="tel">Телефон</label> 
-                <input type="tel" name="name" id="tel"/>
+                <div class="form-field">
+                  <svg class="svg-form" width="18" height="18">
+                    <use href=./img/symbol-defs.svg#icon-email></use>
+                  </svg>
+                <label class="form-label" for="mail">Почта</label>
+                <input class="form-input" type="email" name="name" id="mail"/></div>
 
-                <label for="mail">Почта</label>
-                <input type="email" name="name" id="mail"/>
+                <textarea  class="comment" name="" id=""rows="50" placeholder="Комментарий" ></textarea>
 
-                <textarea name="" id=""rows="10" placeholder="Комментарий" ></textarea>
-
+                <div class="conditions">
                 <input type="checkbox" name="conditions" id="conditions">
-                <label for="conditions"> Соглашаюсь с условиями рассылки и принимаю <a href=""> условия договора</a></label>
+                <label class="conditions-label" for="conditions"> Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label></div>
 
-                <button type="submit">Отправить</button>
+                <div class="form-button">
+                <button class="button" type="submit">Отправить</button></div>
               </form>
             </div>
           </div>
